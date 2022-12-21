@@ -1,0 +1,214 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5B359D;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.burger-menu {
+  cursor: pointer;
+  display: none;
+  font-size: 1.5em;
+}
+.burger-menu-checkbox {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin: 0 20px;
+}
+.nav-links a {
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    gap: 10px;
+  }
+  .nav-links a {
+    color: white;
+  }
+  .burger-menu {
+    display: block;
+    text-align: end;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  .burger-menu-checkbox:checked + .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    background: linear-gradient(90deg, #5B359D 30%, white 30%);
+  }
+}
+.header {
+  display: flex;
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  height: 70vh;
+  background-position: bottom;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.header__button a {
+  color: white;
+  background-color: #5B359D;
+  text-decoration: none;
+  padding: 15px;
+}
+.header h1 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .header__button {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .header__button {
+    font-size: 30px;
+  }
+}
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.main i {
+  font-size: 5em;
+  margin-top: 30px;
+}
+.main__container {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__container article {
+  width: 80%;
+}
+
+.main__top__paragraphe {
+  font-size: 20px;
+  width: 50%;
+  align-self: center;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+  .main__container {
+    gap: 50px;
+  }
+  .main__container article {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+  .main__container__bottom {
+    width: 40%;
+    align-self: center;
+    margin-top: 5px;
+  }
+  .main i {
+    font-size: 6em;
+  }
+}
+@media screen and (min-width: 1279px) {
+  .main__container {
+    gap: 50px;
+  }
+  .main__container article {
+    width: 30%;
+    margin-bottom: 50px;
+  }
+  .main__container__bottom {
+    width: 40%;
+    align-self: center;
+  }
+  .main i {
+    font-size: 8em;
+  }
+}
+.footer {
+  background-color: #5B359D;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer li {
+  color: white;
+  display: inline-block;
+}
+.footer p {
+  color: white;
+  font-size: 1.5em;
+}
+.footer__shortcut {
+  text-align: left;
+  margin-left: 10px;
+}
+.footer__shortcut ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer__social {
+  width: 30%;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social i {
+  color: white;
+  font-size: 1.7em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__shortcut {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

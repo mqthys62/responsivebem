@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: bottom;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+    
+
+    &__button a {
+    color: white;
+    background-color: #5B359D;
+    text-decoration: none;
+    padding: 15px;  
+
+}
+    h1 {
+        margin: 0;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .header__button {
+        font-size: 30px;
+    }
+}
+
